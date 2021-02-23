@@ -5,7 +5,7 @@ Variants
 
 | bdg-formats               | VCF 4.3 specification                                                         | GA4GH schema                                               |
 |---------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------|
-| `contigName`              | column 1 "CHROM"                                                              | `Variant.reference_name`                                   |
+| `referenceName`              | column 1 "CHROM"                                                              | `Variant.reference_name`                                   |
 | `start`                   | column 2 "POS", converted to 0-based coordinate system, closed-open intervals | `Variant.start`                                            |
 | `end`                     | `start + referenceAllele.length()`                                            | `Variant.end`                                              |
 | `names`                   | column 3 "ID", shared across all alleles in the same VCF record               | `Variant.names`                                            |
@@ -93,7 +93,7 @@ Note 0:
 
 | bdg-formats               | VCF 4.2 specification              | VCF 4.3 specification              | GA4GH variants specification   |
 |---------------------------|------------------------------------|------------------------------------|--------------------------------|
-| `contigName`              | column 1 "CHROM"                   | column 1 "CHROM"                   | `Variant.reference_name`       |
+| `referenceName`              | column 1 "CHROM"                   | column 1 "CHROM"                   | `Variant.reference_name`       |
 | `start`                   | column 2 "POS" ^1                  | column 2 "POS" ^1                  | `Variant.start`                |
 | `end`                     | `start + referenceAllele.length()` | `start + referenceAllele.length()` | `Variant.end`                  |
 | `names`                   | column 3 "ID" ^2                   | column 3 "ID" ^2                   | `Variant.names`                |
@@ -521,7 +521,7 @@ message AnalysisResult {
 | bdg-formats               | VCF 4.2 specification                       | VCF 4.3 specification                       | GA4GH variants specification        |
 |---------------------------|---------------------------------------------|---------------------------------------------|-------------------------------------|
 | `variant`                 | | | |
-| `contigName`              | column 1 "CHROM"                            | column 1 "CHROM"                            | `Variant.reference_name`            |
+| `referenceName`              | column 1 "CHROM"                            | column 1 "CHROM"                            | `Variant.contig_name`            |
 | `start`                   | column 2 "POS" ^1                           | column 2 "POS" ^1                           | `Variant.start`                     |
 | `end`                     | `start + variant.referenceAllele.length()`  | `start + variant.referenceAllele.length()`  | `Variant.end`                       |
 | `genotypeAnnotation`      | | | |

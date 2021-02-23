@@ -7,7 +7,7 @@ Features
 | `name`          |                               | `Name` attribute key          | optional column 4 "name" ^2    | column 4 "name" ^2    | column 5 "intervalName" ^2 |
 | `source`        | column 2 "source"             | column 2 "source"             |                                |                       | |
 | `featureType`   | column 3 "type"               | column 3 "type"               |                                |                       | |
-| `contigName`    | column 1 "seqid"              | column 1 "seqid"              | column 1 "chrom"               | column 1 "chrom"      | column 1 "sequenceName"    |
+| `referenceName`    | column 1 "seqid"              | column 1 "seqid"              | column 1 "chrom"               | column 1 "chrom"      | column 1 "sequenceName"    |
 | `start`         | column 4 "start" ^1           | column 4 "start" ^1           | column 2 "chromStart"          | column 2 "chromStart" | column 2 "start"           |
 | `end`           | column 5 "end" ^1             | column 5 "end" ^1             | column 3 "chromEnd"            | column 3 "chromEnd"   | column 3 "end"             |
 | `strand`        | column 7 "strand" ^3          | column 7 "strand" ^3          | optional column 6 "strand" ^3  | column 6 "strand"     | column 4 "strand" ^3       |
